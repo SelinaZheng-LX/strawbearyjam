@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", () => {
     thead.innerHTML = `
         <tr><th>Image</th>
             <th>Dish Name</th>
-            <th>Description</th>
+            <th class="web">Description</th>
             <th>Price</th>
             
         </tr>
@@ -55,7 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
             dish.dishName
         }" style="height:13rem;"></td>
             <td>${dish.dishName}</td>
-            <td>${dish.description}</td>
+            <td class="web">${dish.description}</td>
             <td>$${dish.price.toFixed(2)}</td>
             
         `;
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log(totalSlides);
     function showSlide(index) {
         if (slider) {
-            slider.style.transform = `translateX(-${index * 600}px)`;
+            slider.style.transform = `translateX(-${index * 37}rem)`;
         }
     }
     function goToPrev() {
