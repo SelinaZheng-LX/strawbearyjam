@@ -14,6 +14,13 @@ const menuDishes = [
         imageURL: "images/cakeslice.webp",
     },
     {
+        dishName: "Strawbeary Combo",
+        description:
+            "Get three flavors of our signature cupcakes in one combo!",
+        price: 24.99,
+        imageURL: "images/threecake.png",
+    },
+    {
         dishName: "Strawbeary Sparkle",
         description:
             "A refreshing blend of strawberries and sparkling water. Hints of refreshing mint.",
@@ -26,6 +33,13 @@ const menuDishes = [
             "An aromatic juice made from fresh strawberries and a hint of mint.",
         price: 6.99,
         imageURL: "images/drink2.webp",
+    },
+    {
+        dishName: "Strawbeary Latte",
+        description:
+            "A creamy latte made with fresh strawberries, milk, and a touch of honey.",
+        price: 7.49,
+        imageURL: "images/latte.webp",
     },
 ];
 
