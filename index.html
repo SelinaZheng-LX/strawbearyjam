@@ -26,6 +26,7 @@
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </div>
+                <button id="open-cart" class="button">Cart (0)</button>
             </nav>
         </section>
         <section id="header">
@@ -81,6 +82,32 @@
                 <button class="slide-btn right">&#8594;</button>
             </div>
         </section>
+        <div id="cart-modal" class="modal hidden">
+            <div class="modal-backdrop"></div>
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="font-secondary text-accent-color">Your Cart</h2>
+                    <button
+                        id="close-cart"
+                        class="modal-close"
+                        aria-label="Close Cart"
+                    >
+                        &times;
+                    </button>
+                </div>
+                <div id="cart-list"></div>
+                <div
+                    id="cart-summary"
+                    style="margin-top: 1rem; font-weight: 700"
+                >
+                    Total: $0.00
+                </div>
+                <div class="modal-actions">
+                    <button id="clear-cart" class="button">Clear Cart</button>
+                    <button id="checkout" class="button">Checkout</button>
+                </div>
+            </div>
+        </div>
 
         <section id="contact">
             <div class="contact-form">
