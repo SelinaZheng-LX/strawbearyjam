@@ -257,7 +257,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const getCartCount = () => loadCart().reduce((n, i) => n + i.quantity, 0);
     const updateCartButtonCount = () => {
         if (openCartBtn) {
-            openCartBtn.textContent = `Cart (${getCartCount()})`;
+            const count = getCartCount();
+            openCartBtn.textContent = `Cart (${count})`;
+            openCartBtn.setAttribute("data-count", String(count));
         }
     };
 
