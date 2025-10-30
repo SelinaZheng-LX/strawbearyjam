@@ -226,6 +226,33 @@ ol {
     margin-top: 1rem;
     border-radius: 10px;
 }
+.button:hover{
+    background-color: #ff1e4e;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.4);
+}
+/* small rightward nudge when clickable elements are pressed */
+.button,
+.slide-btn,
+.menu-button,
+.qty-btn,
+.remove-btn,
+.modal-close,
+.footer-links a,
+#open-cart {
+    transition: transform 120ms ease, box-shadow 120ms ease;
+    will-change: transform;
+}
+
+.button:active,
+.slide-btn:active,
+.menu-button:active,
+.qty-btn:active,
+.remove-btn:active,
+.modal-close:active,
+.footer-links a:active,
+#open-cart:active {
+    transform: translateY(2px);
+}
 /* body */
 
 #body {
